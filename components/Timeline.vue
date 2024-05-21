@@ -21,7 +21,7 @@
         </li>
         <li class="rb-item" ng-repeat="itembx">
           <div class="timestamp">
-            Summer 2021<br> 3:00 PM
+            Summer 2021
           </div>
           <div class="item-title">Covering Spaces Summer Project.</div>
 
