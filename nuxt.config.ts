@@ -5,13 +5,18 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/image',
   ],
-  image: {
-    // Optional configuration
-  },
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+  vite: {
+    build: {
+        rollupOptions: {
+            // Define external assets explicitly if needed
+            external: '/images/Spiral-2.png'
+        }
+    }
+}
 });
