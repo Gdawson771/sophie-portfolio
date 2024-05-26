@@ -10,7 +10,7 @@
 
     </NuxtLink> 
     <div class="bg-white py-8 px-6 w-11/12 rounded-2xl shadow-2xl flex items-center justify-center">
-      <embed :src="pdfSrc" width="99%" height="900px" />
+      <embed :src="pdfSrc" width="99%" height="600px" />
     </div>
     </div>
 </template>
