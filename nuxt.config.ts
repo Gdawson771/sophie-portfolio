@@ -2,6 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+  modules: [
+    '@nuxt/image',
+  ],
+  image: {
+    // Optional configuration
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
