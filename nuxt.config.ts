@@ -1,10 +1,15 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// nuxt.config.js
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css','primevue/resources/themes/aura-light-green/theme.css'],
   modules: [
     '@nuxt/image',
+    'nuxt-primevue'
   ],
+  primevue: {
+      /* Options */
+  },
+
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -14,9 +19,8 @@ export default defineNuxtConfig({
   vite: {
     build: {
         rollupOptions: {
-            // Define external assets explicitly if needed
             external: '/images/Spiral-2.png'
         }
     }
-}
+  }
 });

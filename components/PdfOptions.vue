@@ -15,7 +15,7 @@ const documents = ref([
   { 
     title: 'Positivity and integrality of mirror maps', 
     src: 'The_positivity_and_integrality_of_mirror_maps',
-    summary: 'This paper was the result of my Dissertation, supervised by Prof Nick Sheridan at the University of Edinburgh. The concept of a mirror map is present in the fields of Algebraic Geometry and Quantum Physics, and the bizarre fact is that when we apply a mirror map to a reflexive polytope (a special kind of lattice polytope) then the output is a power series whose coefficients are all integers. We examine also a slightly different map, which outputs power series whose coefficients are positive integers. This is supremely unexpected, since the mirror map is obtained through an exponential of a quotient of polynomials with rational coefficients.' 
+    summary: 'This paper was the result x`of my Dissertation, supervised by Prof Nick Sheridan at the University of Edinburgh. The concept of a mirror map is present in the fields of Algebraic Geometry and Quantum Physics, and the bizarre fact is that when we apply a mirror map to a reflexive polytope (a special kind of lattice polytope) then the output is a power series whose coefficients are all integers. We examine also a slightly different map, which outputs power series whose coefficients are positive integers. This is supremely unexpected, since the mirror map is obtained through an exponential of a quotient of polynomials with rational coefficients.' 
   },
   { 
     title: 'Discrete Morse theory',
@@ -53,5 +53,19 @@ const documents = ref([
     ". .";
 }
 
-
+.blue-gradient-reverse {
+  background-image: linear-gradient(180deg,
+      hsl(221deg 91% 9%) 0%,
+      hsl(221deg 89% 10%) 9%,
+      hsl(219deg 86% 12%) 18%,
+      hsl(218deg 85% 13%) 27%,
+      hsl(216deg 83% 14%) 36%,
+      hsl(216deg 80% 16%) 45%,
+      hsl(214deg 79% 17%) 55%,
+      hsl(213deg 76% 18%) 64%,
+      hsl(211deg 74% 19%) 73%,
+      hsl(210deg 72% 21%) 82%,
+      hsl(209deg 70% 22%) 91%,
+      hsl(207deg 68% 23%) 100%);
+}
 </style>

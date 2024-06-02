@@ -1,18 +1,9 @@
 <template>
-    <div class="h-5/6 items-center text-white flex justify-center w-full text-4xl">Hi, I'm Sophie</div>
-    <div>
-        <div class="blue-gradient-reverse h-screen">
-            <Timeline />
-        </div>
-        <div class="blue-gradient h-96">
-        </div>
-    </div>
-
+    <AboutMe />
 </template>
 
 <script setup>
-import Navbar from '~/components/Navbar.vue';
-import Timeline from '~/components/Timeline.vue';
+import AboutMe from '~/pages/About-Me.vue';
 </script>
 
 <style scoped>

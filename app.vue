@@ -1,11 +1,7 @@
 <template>
-  <div class="blue-gradient h-screen">
+  <div>
     <Navbar />
     <NuxtPage />
-  </div>
-  <div class="blue-gradient-reverse h-screen">
-  </div>
-  <div class="blue-gradient h-screen">
   </div>
 </template>
 
