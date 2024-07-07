@@ -16,7 +16,7 @@
           <div class="timestamp">
            2018
           </div>
-          <div class="item-title">Guyana</div>
+          <div class="item-title">Teaching Math in Guyana</div>
 
         </li>
         <li class="rb-item" ng-repeat="itembx">
@@ -53,6 +53,12 @@
             March 10th, 2024
           </div>
           <div class="item-title">IMA TMT Presentation</div>
+        </li>
+        <li class="rb-item" ng-repeat="itembx">
+          <div class="timestamp">
+            Sep 1st, 2024
+          </div>
+          <div class="item-title">PhD in algebraic geometry and category theory</div>
         </li>
 
       </ul>

@@ -1,15 +1,15 @@
 <template>
-<div class="w-full blue-gradient-reverse text-white p-32 flex gap-8 items-start">
+<div class="w-full blue-gradient-reverse text-white px-32 py-8 flex gap-8 items-start">
       <Timeline />
 
       <div class="bg-gray-700 border-2 w-1/2 border-green-300 w-full flex flex-col p-4 gap-2 rounded-xl shadow-2xl">
         <h2 class="text-2xl">
-            Hello, I'm <span class="text-red-600 font-semibold">Sophie</span>
+            Hello, I'm <span class="text-green-600 font-semibold">Sophie</span>
          </h2>
          <span class="text-lg">Mathemagician/PhD student/cat lover</span>
          <span>
-            I will be graduating from the University of Edinburgh with an MMath this summer -- where an MMath is a 5 year
-            integrated masters in mathematics. If I reach my conditions, I will be supervised by Prof Antony Maciocia in a
+            I graduated from the University of Edinburgh with an MMath 1st class this summer -- where an MMath is a 5 year
+            integrated masters in mathematics. Going forward, I will be supervised by Prof Antony Maciocia in a
             PhD at the University of Edinburgh, looking at algebraic geometry and category theory.
 
             I've been involved in a few cool maths things, such as the Matt Parker Pi Day in 2021 and 2023, and one of the
@@ -17,8 +17,8 @@
             spare time I enjoy ballroom and tap dancing and choral singing, as well as designing celtic knots.
          </span>
          <NuxtLink 
-            to="/papers" 
-            class="mt-4 w-36 flex justify-center items-center bg-green-300 text-white rounded-2xl px-4 py-2 text-slate-900 
+            to="/writing" 
+            class="mt-4 w-36 flex justify-center items-center bg-green-600 text-white rounded-2xl px-4 py-2 text-slate-900 
             font-semibold hover:bg-green-400 transition-colors duration-200 ease-in-out">
             See my papers
          </NuxtLink>

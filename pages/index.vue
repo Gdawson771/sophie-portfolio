@@ -1,5 +1,13 @@
 <template>
-    <AboutMe />
+    <div class="blue-gradient-reverse flex flex-col pt-32 items-center h-screen gap-8">
+        <h1 class="text-white text-5xl">Hi, I'm Sophie</h1>
+        <h3 class="text-gray-100 text-2xl">Want to check out my papers?</h3>
+        <NuxtLink to="/writing">
+            <button 		class="text-white bg-gray-700 border-2 border-green-300 w-full flex flex-col p-4 gap-2 rounded-xl shadow-2xl hover:bg-gray-600 transition-colors duration-300 cursor-pointer">
+                Enlighten yourself
+            </button>
+        </NuxtLink>
+    </div>
 </template>
 
 <script setup>

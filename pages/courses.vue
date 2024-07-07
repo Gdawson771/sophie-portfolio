@@ -1,5 +1,6 @@
 <template>
-    <div class="blue-gradient-reverse flex flex-col p-16 gap-2">
+    <div class="blue-gradient-reverse flex flex-col p-16 gap-2 min-h-screen">
+        <h1 class="text-white text-2xl pb-4">Here is a breakdown of the courses I took during my M-Math, alongside my thoughts on them and some recommendations for Math students.</h1>
         <input type="text" v-model="searchQuery" placeholder="Search by title or summary..."
             class="mb-4 p-2 rounded border-2 border-gray-300">
 
@@ -19,8 +20,9 @@
                 <p class="text-white">{{ course.description }}</p>
             </div>
         </div>
-        <div v-if="filteredCourses.length === 0" class="h-screen">
+        <div v-if="Object.keys(filteredCourses).length === 0" class="h-screen text-white text-2xl flex w-full jusitfy-center items-center flex-col">
             Sorry no courses match your search
+            <NuxtImg src="/images/NoItemsCart.svg" alt="Empty Cart Image" class="w-1/2"/>
         </div>
     </div>
 </template>
