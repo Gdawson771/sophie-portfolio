@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full flex flex-col justify-center items-center gap-4 blue-gradient-reverse">
+  <div class="w-full flex flex-col justify-center items-center gap-4">
     <!-- Dynamically set the source of the PDF based on the route parameter -->
     <NuxtLink to="../writing">
       <div

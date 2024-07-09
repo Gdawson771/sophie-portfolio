@@ -1,5 +1,5 @@
 <template>
-    <div class="blue-gradient-reverse flex flex-col p-16 gap-2 min-h-screen">
+    <div class="bg-[#111010] flex flex-col p-16 gap-2 min-h-screen">
         <h1 class="text-white text-2xl pb-4">Here is a breakdown of the courses I took during my M-Math, alongside my thoughts on them and some recommendations for Math students.</h1>
         <input type="text" v-model="searchQuery" placeholder="Search by title or summary..."
             class="mb-4 p-2 rounded border-2 border-gray-300">
@@ -14,8 +14,8 @@
         <div v-for="(yearCourses, year) in filteredCourses" :key="year" class="flex gap-4 flex-col">
             <div class="font-bold text-red-600 text-2xl">Year {{ year }}</div>
             <div v-for="course in yearCourses" :key="course.title"
-                class="bg-gray-700 border-2 border-green-300 w-full flex flex-col p-4 gap-2 rounded-xl shadow-2xl">
-                <h3 class="font-semibold text-green-400 text-lg">{{ course.title }} ({{ course.credits }} credits, level
+                class="bg-gray-700 border-2  w-full flex flex-col p-4 gap-2 rounded-xl shadow-2xl">
+                <h3 class="font-semibold text-red-600 text-lg">{{ course.title }} ({{ course.credits }} credits, level
                     {{ course.level }})</h3>
                 <p class="text-white">{{ course.description }}</p>
             </div>

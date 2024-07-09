@@ -1,5 +1,5 @@
 <template>
-<div class="w-full blue-gradient-reverse text-white px-32 py-8 flex gap-8 items-start">
+<div class="w-full text-white px-32 py-8 flex gap-8 items-start">
       <Timeline />
 
       <div class="bg-gray-700 border-2 w-1/2 border-green-300 w-full flex flex-col p-4 gap-2 rounded-xl shadow-2xl">

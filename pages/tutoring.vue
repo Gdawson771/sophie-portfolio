@@ -1,24 +1,22 @@
 <template>
-   <div class="w-full blue-gradient-reverse text-white p-32 flex flex-col gap-8 items-start">
-     <h1 class="text-3xl font-bold">Sophie's Maths Lessons in Edinburgh</h1>
-     <p>I am a PhD student studying algebraic geometry offering tuition up to SQA Advanced Higher and beyond, delivered 1-2-1 and online. </p>
-     <p>Private tuition in maths provides the help, encouragement, and support needed to boost your understanding of this crucial subject, representing an investment in your future.</p>
-     <h3 class="text-2xl mt-4">Specialisations</h3>
-     <ul>
-       <li>SQA Higher, Advanced Higher Mathematics</li>
-       <li>Edexcel A Level Mathematics: Pure Mathematics, Further Pure Mathematics</li>
-       <li>1st year of University Mathematics</li>
-     </ul>
-     <h3 class="text-2xl mt-4">Maths Enrichment from Summer 2024</h3>
-     <p>Learn mathematical problem-solving and strengthen your existing skills, helping you transition between educational levels. Introductory rate of £30 for an hour-long session.</p>
- </div>
- </template>
+  <div class="w-full text-white px-40 py-14 flex flex-col gap-8 items-start">
+      <h1 class="text-3xl font-bold">Edinburgh Tutor</h1>
+      <p>I am a PhD student studying Algebraic Geometry, offering tuition for SQA National 5 and Higher, delivered in person or online.</p>
+      <p>Learn mathematical problem-solving and st  rengthen your existing skills, helping you transition to a higher educational level. Special introductory rate of £20 for an hour-long session.</p>
+      <h3 class="text-2xl mt-4">Experience</h3>
+      <p>I have been offering private tuition since 2021, and have volunteered teaching maths in South America, as well as assisting in Math Circles run by the University. I have also spent two years coordinating and tutoring in the MathPals program, bringing first year university maths students up to speed with the course content.</p>
+      <h3 class="text-2xl mt-4">Approach to Tutoring</h3>
+      <p>I tailor my tutoring to the individual needs of my students, focusing on basic principles, routine processes, and higher level problem-solving techniques. I encourage questions and strive to create a comfortable environment, which I think is necessary to garner a confidence and a deeper understanding of the mathematical concepts.</p>
+  </div>
+
+</template>
  
  <script setup>
  // Vue setup script can go here
  </script>
+
  
- <style scoped>
+<style scoped>
 .blue-gradient-reverse {
    background-image: linear-gradient(180deg,
          hsl(221deg 91% 9%) 0%,
