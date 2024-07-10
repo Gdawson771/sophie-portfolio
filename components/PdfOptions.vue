@@ -1,6 +1,6 @@
 <template>
     <div class="w-full flex-col gap-4 flex w-full flex p-8 min-h-screen items-center justify-center mx-auto">
-      <div v-for="document in firstRowDocuments" class="text-white w-1/2 flex flex-col gap-3">
+      <div v-for="document in firstRowDocuments" class="text-white w-full lg:w-2/3 xl:w-1/2 flex flex-col gap-3">
         <div>
           <h3 class="text-lg font-semibold">
             {{document.title}}
