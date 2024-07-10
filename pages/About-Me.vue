@@ -1,10 +1,9 @@
 <template>
-<div class="w-full text-white px-32 py-8 flex gap-8 items-start">
-      <Timeline />
+<div class="w-full text-white px-32 py-8 flex flex-col gap-8 items-center justify-center ">
 
-      <div class="bg-gray-700 border-2 w-1/2 border-green-300 w-full flex flex-col p-4 gap-2 rounded-xl shadow-2xl">
+      <div class=" border-2 w-[50rem] w-full flex flex-col p-4 gap-2 rounded-xl shadow-2xl">
         <h2 class="text-2xl">
-            Hello, I'm <span class="text-green-600 font-semibold">Sophie</span>
+            Hello, I'm <span class="text-red-600 font-semibold">Sophie</span>
          </h2>
          <span class="text-lg">Mathemagician/PhD student/cat lover</span>
          <span>
@@ -18,11 +17,13 @@
          </span>
          <NuxtLink 
             to="/writing" 
-            class="mt-4 w-36 flex justify-center items-center bg-green-600 text-white rounded-2xl px-4 py-2 text-slate-900 
+            class="mt-4 w-36 flex justify-center items-center bg-red-700 text-white rounded-2xl px-4 py-2 text-slate-900 
             font-semibold hover:bg-green-400 transition-colors duration-200 ease-in-out">
             See my papers
          </NuxtLink>
       </div>
+      <Timeline />
+      
 
    </div>
 
