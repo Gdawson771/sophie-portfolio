@@ -12,13 +12,15 @@
         </div>
 
         <div v-for="(yearCourses, year) in filteredCourses" :key="year" class="flex gap-4 flex-col">
-            <div class="font-bold text-red-600 text-2xl">Year {{ year }}</div>
+            <div class="font-bold text-white text-2xl">Year {{ year }}</div>
             <div v-for="course in yearCourses" :key="course.title"
-                class="bg-gray-700 border-2  w-full flex flex-col p-4 gap-2 rounded-xl shadow-2xl">
-                <h3 class="font-semibold text-red-600 text-lg">{{ course.title }} ({{ course.credits }} credits, level
+            
+                class="border-neutral-700 bg-neutral-800  border-2  w-full flex flex-col p-4 gap-2 rounded-xl shadow-2xl">
+                <h3 class="font-semibold text-white  text-lg">{{ course.title }} ({{ course.credits }} credits, level
                     {{ course.level }})</h3>
-                <p class="text-white">{{ course.description }}</p>
-            </div>
+                <p class="text-gray-200">{{ course.description }}</p>
+                <NuxtLink v-if="course?.link" class="text-gray-200 underline" :to="course?.link">The positivity and integrality of mirror maps</NuxtLink>
+            </div>  
         </div>
         <div v-if="Object.keys(filteredCourses).length === 0" class="h-screen text-white text-2xl flex w-full jusitfy-center items-center flex-col">
             Sorry no courses match your search
@@ -26,7 +28,8 @@
         </div>
     </div>
 </template>
-
+  <!-- <div class="!px-3 !py-4 nuxt-link flex text-white w-full items-center justify-between cursor-pointer flex w-full items-center justify-between rounded border border-neutral-200 border-neutral-700 bg-neutral-800 cursor-pointer"> -->
+        
 <script setup>
 import { ref, computed } from 'vue';
 import 'primevue/resources/themes/aura-light-green/theme.css'
@@ -202,7 +205,8 @@ const courses = ref({
             title: "Dissertation",
             credits: 40,
             level: 11,
-            description: "My dissertation on the positivity and integrality of mirror maps, supervised by Prof Nick Sheridan, can be found here."
+            description: "My dissertation on the positivity and integrality of mirror maps, supervised by Prof Nick Sheridan, can be found here:",
+            link:"/The_positivity_and_integrality_of_mirror_maps"
         },
         {
             title: "Topics in Noncommutative Algebra",
