@@ -3,12 +3,12 @@
     <!-- Dynamically set the source of the PDF based on the route parameter -->
     <NuxtLink to="../writing">
       <div
-        class="bg-gray-700 text-white px-4 py-2  border-2 border-green-300 rounded-xl shadow-2xl hover:bg-gray-600 transition-colors duration-300 cursor-pointer">
+        class="bg-white text-black px-4 py-2  rounded-xl shadow-2xl hover:bg-gray-200 transition-colors duration-300 cursor-pointer">
         Go back to my other papers
       </div>
     </NuxtLink>
-    <div class="bg-white py-8 px-6 w-11/12 rounded-2xl shadow-2xl flex items-center justify-center">
-      <embed :src="pdfSrc" width="99%" height="600px" />
+    <div class="py-8 px-2 lg:px-6 w-full lg:w-11/12 rounded-2xl shadow-2xl flex items-center justify-center">
+      <iframe :src="pdfSrc" width="99%" height="600px" />
     </div>
   </div> 
 </template>
