@@ -1,5 +1,5 @@
 <template>
-   <div class="w-full h-screen text-white flex flex-col gap-8 items-center justify-start ">
+   <div class="w-full h-full min-h-screen text-white flex flex-col gap-8 items-center justify-start ">
 
       <div class="p-4 gap-2 rounded-xl text-white w-full lg:w-2/3 xl:w-1/2 flex flex-col">
          <div class="flex flex-col">
@@ -19,7 +19,7 @@
          <h5 class="font-semibold text-white">Pi Day</h5>
          <span class="text-gray-100"> I've been involved in two epic sessions of calculating pi by hand, working with
             Matt Parker in 2021 and 2023. Check the videos out here:</span>
-         <div class="w-full flex gap-1 py-2 ">
+         <div class="w-full flex gap-4 py-2 ">
             <a href="https://www.youtube.com/watch?v=dtiLxLrzjOQ" target="_blank" class="w-full">
                <div
                   class="!px-3 !py-4 nuxt-link flex text-white w-full items-center justify-between cursor-pointer flex w-full items-center justify-between rounded border border-neutral-200 border-neutral-700 bg-neutral-800 cursor-pointer">
@@ -28,7 +28,7 @@
                      class="squint-icon !w-4 text-white" />
                </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=LIg-6glbLkU" taregt="_blank" class="w-full">
+            <a href="https://www.youtube.com/watch?v=LIg-6glbLkU" target="_blank" class="w-full">
                <div
                   class="!px-3 !py-4 nuxt-link flex text-white w-full items-center justify-between cursor-pointer flex w-full items-center justify-between rounded border border-neutral-200 border-neutral-700 bg-neutral-800 cursor-pointer">
                   The biggest hand calculation in a century! [Pi Day 2024]

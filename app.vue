@@ -5,41 +5,22 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import Navbar from '~/components/Navbar.vue';
 import Timeline from '~/components/Timeline.vue';
+
+export default {
+  head() {
+    return {
+      title: 'Sophie Bleau | PhD Student in Algebraic Geometry and Quantum Physics | University of Edinburgh',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Explore the research portfolio of Sophie Bleau, PhD student at the University of Edinburgh. Featuring publications on Algebraic Geometry, Quantum Physics, and more. Discover insights into mirror maps, Coxeter groups, and other advanced topics discussed in key papers supervised by leading academics.' }
+      ]
+    }
+  }
+}
+
 </script>
 
 <style scoped>
-.blue-gradient {
-  background-image: linear-gradient(0deg,
-      hsl(221deg 91% 9%) 0%,
-      hsl(221deg 89% 10%) 9%,
-      hsl(219deg 86% 12%) 18%,
-      hsl(218deg 85% 13%) 27%,
-      hsl(216deg 83% 14%) 36%,
-      hsl(216deg 80% 16%) 45%,
-      hsl(214deg 79% 17%) 55%,
-      hsl(213deg 76% 18%) 64%,
-      hsl(211deg 74% 19%) 73%,
-      hsl(210deg 72% 21%) 82%,
-      hsl(209deg 70% 22%) 91%,
-      hsl(207deg 68% 23%) 100%);
-}
-
-.blue-gradient-reverse {
-  background-image: linear-gradient(180deg,
-      hsl(221deg 91% 9%) 0%,
-      hsl(221deg 89% 10%) 9%,
-      hsl(219deg 86% 12%) 18%,
-      hsl(218deg 85% 13%) 27%,
-      hsl(216deg 83% 14%) 36%,
-      hsl(216deg 80% 16%) 45%,
-      hsl(214deg 79% 17%) 55%,
-      hsl(213deg 76% 18%) 64%,
-      hsl(211deg 74% 19%) 73%,
-      hsl(210deg 72% 21%) 82%,
-      hsl(209deg 70% 22%) 91%,
-      hsl(207deg 68% 23%) 100%);
-}
 </style>

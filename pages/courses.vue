@@ -1,10 +1,10 @@
 <template>
-    <div class="bg-[#111010] flex flex-col p-16 gap-2 min-h-screen">
+    <div class="bg-[#111010] flex flex-col p-4 xl:p-16 gap-2 min-h-screen">
         <h1 class="text-white text-2xl pb-4">Here is a breakdown of the courses I took during my M-Math, alongside my thoughts on them and some recommendations for Math students.</h1>
         <input type="text" v-model="searchQuery" placeholder="Search by title or summary..."
             class="mb-4 p-2 rounded border-2 border-gray-300">
 
-        <div class="flex gap-8">
+        <div class="flex gap-8 flex-wrap">
             <MultiSelect class="bg-white " display="chip" v-model="creditsQuery" placeholder="Filter by credits"
                 optionLabel="name" :options="creditsOptions" :multiple="true"></MultiSelect>
             <MultiSelect class="bg-white" display="chip" v-model="levelQuery" placeholder="Filter by level"

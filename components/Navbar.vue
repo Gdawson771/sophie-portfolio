@@ -11,7 +11,7 @@
                     </li>
                     <li class="flex">
                         <NuxtLink to="/">
-                            <NuxtImg src="/images/spiral-2.png" alt="Intricate Spiral Design" class="w-24"/>
+                            <NuxtImg src="/images/spiral-2.png" alt="Intricate Spiral Design" class="w-8 xl:w-24"/>
                         </NuxtLink>
                     </li>
                     <li>
