@@ -3,7 +3,7 @@
         <h1 class="text-white text-5xl">Hi, I'm Sophie</h1>
         <h3 class="text-gray-100 text-2xl">Want to check out my papers?</h3>
         <NuxtLink to="/writing">
-            <button class="text-black bg-white w-full flex flex-col p-4 gap-2 rounded-xl shadow-2xl hover:bg-gray-200 transition-colors duration-300 cursor-pointer">
+            <button class="rainbow-gradient-btn text-black w-full justify-center items-center flex flex-col px-8 py-5 gap-2 rounded-xl shadow-2xl hover:bg-gray-200 transition-colors duration-300 cursor-pointer">
               Take a look
             </button>
         </NuxtLink>
@@ -15,35 +15,63 @@ import AboutMe from '~/pages/About-Me.vue';
 </script>
 
 <style scoped>
-.blue-gradient {
-    background-image: linear-gradient(0deg,
-            hsl(221deg 91% 9%) 0%,
-            hsl(221deg 89% 10%) 9%,
-            hsl(219deg 86% 12%) 18%,
-            hsl(218deg 85% 13%) 27%,
-            hsl(216deg 83% 14%) 36%,
-            hsl(216deg 80% 16%) 45%,
-            hsl(214deg 79% 17%) 55%,
-            hsl(213deg 76% 18%) 64%,
-            hsl(211deg 74% 19%) 73%,
-            hsl(210deg 72% 21%) 82%,
-            hsl(209deg 70% 22%) 91%,
-            hsl(207deg 68% 23%) 100%);
+/* Rainbow gradient button styles */
+.rainbow-gradient-btn {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.blue-gradient-reverse {
-    background-image: linear-gradient(180deg,
-            hsl(221deg 91% 9%) 0%,
-            hsl(221deg 89% 10%) 9%,
-            hsl(219deg 86% 12%) 18%,
-            hsl(218deg 85% 13%) 27%,
-            hsl(216deg 83% 14%) 36%,
-            hsl(216deg 80% 16%) 45%,
-            hsl(214deg 79% 17%) 55%,
-            hsl(213deg 76% 18%) 64%,
-            hsl(211deg 74% 19%) 73%,
-            hsl(210deg 72% 21%) 82%,
-            hsl(209deg 70% 22%) 91%,
-            hsl(207deg 68% 23%) 100%);
+.rainbow-gradient-btn::before {
+  content: '';
+  position: absolute;
+  width: 110%;
+  height: 350%;
+  background: conic-gradient(
+    #FF2E2E,
+    #FF831E,
+    #FCFF51,
+    #58FF57,
+    #575FFF,
+    #D257FF,
+    #FF57E5,
+    #FF1556
+  );
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  z-index: -1;
+}
+
+.rainbow-gradient-btn:hover {
+  transform: scale(1.1);
+}
+
+.rainbow-gradient-btn:hover::before {
+  animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Additional button styling */
+.rainbow-gradient-btn::after {
+  content: 'Take a look';
+  position: absolute;
+  width: 96%;
+  height: 86%;
+  background-color: white;
+  border-radius: 0.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: black;
+  font-weight: 500;
+  z-index: 1;
 }
 </style>

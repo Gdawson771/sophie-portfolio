@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-screen text-white  flex flex-col justify-start pt-6 items-center">
+  <div class="w-full h-screen text-white  flex flex-col justify-start pt-6 items-center p-4">
     <div class="w-full flex flex-col gap-3 items-start gap-2 lg:w-2/3 xl:w-1/2">
       <h1 class="text-3xl font-bold">Edinburgh Tutor</h1>
       <p>I am a PhD student studying Algebraic Geometry, offering tuition for SQA National 5 and Higher, delivered in person or online.</p>

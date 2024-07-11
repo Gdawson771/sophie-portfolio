@@ -1,7 +1,7 @@
 <template>
    <div class="w-full h-screen text-white flex flex-col gap-8 items-center justify-start ">
 
-      <div class="p-4 gap-2 rounded-xl shadow-2xl text-white w-full lg:w-2/3 xl:w-1/2 flex flex-col">
+      <div class="p-4 gap-2 rounded-xl text-white w-full lg:w-2/3 xl:w-1/2 flex flex-col">
          <div class="flex flex-col">
             <h2 class="text-2xl">
                Hello, I'm <span class="text-white shadow font-semibold">Sophie</span>
@@ -45,7 +45,7 @@
          </span>
          <NuxtLink to="/writing" class="mx-auto">
             <button
-               class="w-40 text-black bg-white w-full flex flex-col p-4 gap-2 rounded-xl shadow-2xl hover:bg-gray-200 transition-colors duration-300 cursor-pointer">
+               class="w-40 text-black text-lg bg-white w-full flex flex-col p-4 gap-2 rounded-xl hover:bg-gray-200 cursor-pointer">
                See my papers
             </button>
          </NuxtLink>
@@ -70,21 +70,5 @@
    .squint-icon {
       transform: rotate(-55deg);
    }
-}
-
-.blue-gradient-reverse {
-   background-image: linear-gradient(180deg,
-         hsl(221deg 91% 9%) 0%,
-         hsl(221deg 89% 10%) 9%,
-         hsl(219deg 86% 12%) 18%,
-         hsl(218deg 85% 13%) 27%,
-         hsl(216deg 83% 14%) 36%,
-         hsl(216deg 80% 16%) 45%,
-         hsl(214deg 79% 17%) 55%,
-         hsl(213deg 76% 18%) 64%,
-         hsl(211deg 74% 19%) 73%,
-         hsl(210deg 72% 21%) 82%,
-         hsl(209deg 70% 22%) 91%,
-         hsl(207deg 68% 23%) 100%);
 }
 </style>
