@@ -1,30 +1,28 @@
 <template>
-    <div class="w-full flex-col gap-4 flex break-words w-full flex p-8 min-h-screen items-center justify-center">
-      <div v-for="document in firstRowDocuments" class="text-white w-full lg:w-2/3 xl:w-1/2 flex flex-col gap-3">
-        <div>
-          <h3 class="text-lg font-semibold">
-            {{document.title}}
-          </h3>
-          <h5 class="font-light text-sm text-gray-300 pb-1">{{ document.date }}</h5>
-          <span class="text-gray-200">
-            {{document.summary}}
-          </span> 
-        </div>
-        <NuxtLink :to="`/papers/${document.src}`" >
-          <div class="!px-3 !py-4 nuxt-link flex text-white w-full items-center justify-between cursor-pointer flex w-full items-center justify-between rounded border border-neutral-200 border-neutral-700 bg-neutral-800 cursor-pointer">
-            Read Full Paper
-            <NuxtImg src="/images/arrow-right-solid.svg" alt="Empty Cart Image" class="squint-icon !w-4 text-white"/>
-          </div>
-        </NuxtLink>
+  <div class="w-full flex-col gap-4 flex break-words w-full flex p-8 min-h-screen items-center justify-center">
+    <div v-for="document in firstRowDocuments" class="text-white w-full lg:w-2/3 xl:w-1/2 flex flex-col gap-3">
+      <div>
+        <h3 class="text-lg font-semibold">
+          {{document.title}}
+        </h3>
+        <h5 class="font-light text-sm text-gray-300 pb-1">{{ document.date }}</h5>
+        <span class="text-gray-200">
+          {{document.summary}}
+        </span> 
+      </div>
+      <div @click="handleDocumentClick(document.src)" class="!px-3 !py-4 nuxt-link flex text-white w-full items-center justify-between cursor-pointer flex w-full items-center justify-between rounded border border-neutral-200 border-neutral-700 bg-neutral-800 cursor-pointer">
+        Read Full Paper
+        <NuxtImg src="/images/arrow-right-solid.svg" alt="Empty Cart Image" class="squint-icon !w-4 text-white"/>
       </div>
     </div>
+  </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
 
-const firstRowDocuments =ref([
-{ 
+const firstRowDocuments = ref([
+  { 
     title: 'Positivity and integrality of mirror maps', 
     date:'Sep 2023 - Sep 2024',
     src: 'The_positivity_and_integrality_of_mirror_maps',
@@ -60,15 +58,26 @@ const firstRowDocuments =ref([
     summary: 'Over the summer of 2021, I dipped my toe into the world of Algebraic Topology, where I studied the covering spaces of the figure of eight in an unpaid summer project supervised by Prof Jon Pridham. To my delight, I managed to sneak in my hobby of celtic knots into the research, and shared my findings on the Chalkdust magazine, which you can read at: https://chalkdustmagazine.com/features/covering-infinity/',
   }
 ]);
-const secondRowDocuments = ref([
- 
 
+const isMobile = () => {
+  return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+};
 
-]);
+const handleDocumentClick = (src) => {
+  if (isMobile()) {
+    const link = document.createElement('a');
+    link.href = `/papers/${src}`;
+    link.download = src;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  } else {
+    window.location.href = `/papers/${src}`;
+  }
+};
 </script>
 
 <style scoped>
-
 .nuxt-link {
   .squint-icon {
     transform: rotate(-45deg);
