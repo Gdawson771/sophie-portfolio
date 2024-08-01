@@ -1,16 +1,16 @@
 <template>
-  <div class="w-full flex-col gap-4 flex break-words w-full flex p-8 min-h-screen items-center justify-center">
-    <div v-for="document in firstRowDocuments" class="text-white w-full lg:w-2/3 xl:w-1/2 flex flex-col gap-3">
-      <div>
+  <div class="w-full flex-col gap-10 flex break-words w-full flex min-h-screen items-center justify-center pb-40">
+    <div v-for="document in firstRowDocuments" class="p-2 text-white w-full lg:w-2/3 xl:w-[45rem] flex flex-col gap-4">
+       <div>
         <h3 class="text-lg font-semibold">
           {{document.title}}
         </h3>
-        <h5 class="font-light text-sm text-gray-300 pb-1">{{ document.date }}</h5>
+        <h5 class="font-light text-sm text-gray-300 pb-3">{{ document.date }}</h5>
         <span class="text-gray-200">
           {{document.summary}}
         </span> 
       </div>
-      <div @click="handleDocumentClick(document.src)" class="!px-3 !py-4 nuxt-link flex text-white w-full items-center justify-between cursor-pointer flex w-full items-center justify-between rounded border border-neutral-200 border-neutral-700 bg-neutral-800 cursor-pointer">
+      <div @click="handleDocumentClick(document.src)" class="hover:bg-stone-800 !px-3 !py-4 nuxt-link flex text-white w-full items-center justify-between cursor-pointer flex w-full items-center justify-between rounded border border-neutral-200 border-neutral-700 bg-neutral-800 cursor-pointer">
         Read Full Paper
         <NuxtImg src="/images/arrow-right-solid.svg" alt="Empty Cart Image" class="squint-icon !w-4 text-white"/>
       </div>
@@ -22,39 +22,33 @@
 import { ref } from 'vue';
 
 const firstRowDocuments = ref([
-  { 
-    title: 'Positivity and integrality of mirror maps', 
-    date:'Sep 2023 - Sep 2024',
-    src: 'The_positivity_and_integrality_of_mirror_maps',
-    quick_summary: 'Examination of mirror maps in Algebraic Geometry and Quantum Physics revealing unexpected integer coefficients.' ,
-    summary: 'This paper was the result of my Dissertation, supervised by Prof Nick Sheridan at the University of Edinburgh. The concept of a mirror map is present in the fields of Algebraic Geometry and Quantum Physics, and the bizarre fact is that when we apply a mirror map to a reflexive polytope (a special kind of lattice polytope) then the output is a power series whose coefficients are all integers. We examine also a slightly different map, which outputs power series whose coefficients are positive integers. This is supremely unexpected, since the mirror map is obtained through an exponential of a quotient of polynomials with rational coefficients.' ,
-  },
+{
+    title: "Positivity and Integrality of Mirror Maps",
+    date: "May 2024",
+    source_url: "The_positivity_and_integrality_of_mirror_maps",
+    summary: "This paper explores the application of mirror maps to reflexive polytopes in Algebraic Geometry and Quantum Physics, revealing that these maps generate power series with integer coefficients, and examines a variant map producing series with positive integers, a surprising result given their polynomial rational coefficient origins."
+},
   { 
     title: 'Discrete Morse theory',
     date:'Summer 2023',
     src: 'Morse_Theory',
-    quick_summary: 'A combinatorial proof that the square of the differential is zero, presented during a summer project.',
-    summary: 'I wrote this with the help of Dr Jeff Hicks during my summer project in 2023. The project discusses a combinatorial proof that the square of the differential is zero. For this we define the differential on a simplicial complex, and what a differentiable function looks like. With this and the definition of the sign on a given function through a simplicial complex, we have the ingredients we need to prove the required equality! I spoke about this at the IMA TMT conference, and you can see my talk here: https://youtu.be/NTul8QoZdYI?si=hZetzAgdFHA1X01f',
-  },
+    summary: 'This paper, developed during a 2023 summer project with Dr. Jeff Hicks, presents a combinatorial proof that the square of the differential is zero in simplicial complexes. Key concepts include differential definition and sign assignment within a simplicial complex. The findings were shared at the IMA TMT conference, and the presentation is available online.'},
   { 
     title: 'Brace theory',
     date: 'Winter 2022',
     src: 'The_Study_Of_Braces_And_The_Yang_Baxter_Equation',
-    quick_summary:'Discussion on algebraic objects called braces and their relation to the Yang-Baxter equation and Jacobson radical rings.',
     summary: 'My fourth year group project was supervised by Prof Agata Smoktunowicz, who is a delight to work with. Braces are algebraic objects like rings, except instead of multiplication we have adjoint multiplication, which is a noncommutative operation. The paper discusses the set theoretic solutions to the Yang-Baxter equation, and Jacobson radical rings, and how these objects correspond to braces.'
   },
   { 
     title: 'Coxeter groups',
     src: 'Coxeter_Groups',
     date: 'Winter 2023',
-    quick_summary: 'Overview of Coxeter groups in representation theory, studied during a reading course on symmetric groups.',
     summary: 'This project was the final assessment for the representation theory of the symmetric group reading course. A Coxeter group is an object in representation theory generated by some set of reflections on a vector space. The reading course was supervised by Dr Pavel Safronov, who was very happy to supervise both of the reading courses I took during my undergraduate degree, and would recommend studying his courses or participating in one of his reading courses if you get the chance.',
   },
   { 
     title: 'Covering spaces of the figure of eight',
     src: 'Covering_Spaces_Of_The_Figure_Of_Eight',
     date: 'Summer 2021',
-    quick_summary: 'Research on covering spaces in Algebraic Topology, integrating celtic knot designs, conducted during a summer project.',
     summary: 'Over the summer of 2021, I dipped my toe into the world of Algebraic Topology, where I studied the covering spaces of the figure of eight in an unpaid summer project supervised by Prof Jon Pridham. To my delight, I managed to sneak in my hobby of celtic knots into the research, and shared my findings on the Chalkdust magazine, which you can read at: https://chalkdustmagazine.com/features/covering-infinity/',
   }
 ]);
