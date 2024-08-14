@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center gap-8 justify-start">
-    <div class="flex flex-col items-start gap-2 p-2 lg:w-2/3 xl:w-[45rem] ">
+    <div class="flex flex-col items-start gap-2 p-4 lg:w-2/3 xl:w-[45rem] ">
       <h1 class="text-white text-4xl">Hi, I'm Sophie</h1>
       <span class="text-md font-light text-gray-200">PhD student | pi calculator</span>
       <span class="text-gray-100">

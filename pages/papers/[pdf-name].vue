@@ -1,27 +1,41 @@
 <template>
   <div class="w-full flex flex-col justify-center items-center gap-4">
     <!-- Dynamically set the source of the PDF based on the route parameter -->
-    <NuxtLink to="../writing">
+    <NuxtLink to="../">
       <div
         class="bg-white text-black px-4 py-2  rounded-xl shadow-2xl hover:bg-gray-200 transition-colors duration-300 cursor-pointer">
         Go back to my other papers
       </div>
     </NuxtLink>
     <div class="py-8 px-2 lg:px-6 w-full lg:w-11/12 rounded-2xl shadow-2xl flex items-center justify-center">
-      <iframe :src="pdfSrc" width="99%" height="600px" />
+      <div v-if="isMobile" class="mt-4">
+        <a :href="pdfSrc" download class="bg-white text-black text-3xl px-6 py-3 rounded-xl shadow-2xl hover:bg-blue-600 transition-colors duration-300 cursor-pointer">
+          Download PDF
+        </a>
+      </div>
+      <iframe v-else :src="pdfSrc" width="100%" height="600px" />
+      
     </div>
+
   </div> 
+ 
 </template>
 
 <script setup>
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
-
 const route = useRoute();
 
 // Compute the PDF source URL dynamically from the route parameter
 const pdfName = computed(() => route.params.pdfname);
 const pdfSrc = computed(() => `/${pdfName?.value}.pdf`);
+
+const isMobile = computed(() => {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+});
+
+
 console.log(pdfSrc);
 </script>
 

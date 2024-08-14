@@ -1,7 +1,7 @@
 <template>
-    <nav class="h-1/6 p-16 pb-16">
+    <nav class="h-1/6 py-12">
         <div class="w-full flex justify-center">
-            <div class="w-full lg:w-2/3 xl:w-[45rem] p-2">
+            <div class="w-full lg:w-2/3 xl:w-[45rem] p-4">
                 <ul class="flex w-full justify-start gap-8 items-center">
                     <li>
                         <NuxtLink to="/" class="text-white hover:text-gray-200">Home</NuxtLink>

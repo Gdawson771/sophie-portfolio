@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#111010] h-full">
+  <div class="bg-[#111010] h-full min-h-screen">
     <Navbar />
     <NuxtPage />
   </div>
@@ -7,7 +7,6 @@
 
 <script>
 import Navbar from '~/components/Navbar.vue';
-import Timeline from '~/components/Timeline.vue';
 
 export default {
   head() {

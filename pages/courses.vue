@@ -1,8 +1,13 @@
 <template>
     <div class="bg-[#111010] flex  min-h-screen justify-center w-full">
-        <div class="flex flex-col gap-2 w-full lg:w-2/3 xl:w-[45rem] p-2">
-            <h1 class="text-white text-2xl pb-4">Here is a breakdown of the courses I took during my M-Math, alongside
-                my thoughts on them and some recommendations for Math students.</h1>
+        <div class="flex flex-col gap-2 w-full lg:w-2/3 xl:w-[45rem] p-4">
+            <div class="flex flex-col pb-8">
+                <h1 class="text-white text-3xl">MMath courses at Edinburgh</h1>
+                <span class="text-md font-light text-gray-200">
+                    Enjoy this breakdown of the courses I took during my M-Math, alongside
+                    my thoughts on them and some recommendations for Math students
+                </span>
+            </div>
             <input type="text" v-model="searchQuery" placeholder="Search by title or summary..."
                 class="mb-4 p-2 rounded border-2 border-gray-300">
 
