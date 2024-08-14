@@ -22,17 +22,23 @@
 </template>
 
 <script setup>
-import { computed } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
+
 const route = useRoute();
 
 // Compute the PDF source URL dynamically from the route parameter
 const pdfName = computed(() => route.params.pdfname);
 const pdfSrc = computed(() => `/${pdfName?.value}.pdf`);
 
-const isMobile = computed(() => {
-  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+// Variable to store whether the user is on a mobile device
+const isMobile = ref(false);
+
+onMounted(() => {
+  if (process.client) {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    isMobile.value = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+  }
 });
 
 
