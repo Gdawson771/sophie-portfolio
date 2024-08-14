@@ -17,7 +17,6 @@ export default defineNuxtConfig({
 
   primevue: {
   },
-
   postcss: {
     plugins: {
       tailwindcss: {},
