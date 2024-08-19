@@ -76,3 +76,34 @@
     @apply bg-background text-foreground;
   }
 }
+
+.link-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #1e1e1e; /* equivalent to bg-neutral-800 */
+  border: 1px solid #3d3d3d; /* equivalent to border-neutral-700 */
+  border-radius: 0.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.link-container:hover {
+  background-color: #2c2c2c; /* equivalent to hover:bg-stone-800 */
+}
+
+.nuxt-link {
+  .squint-icon {
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+}
+
+.nuxt-link:hover {
+  .squint-icon {
+    transform: rotate(-55deg);
+  }
+}

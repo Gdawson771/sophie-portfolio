@@ -24,26 +24,18 @@
         Matt Parker in 2021 and 2023. Check the videos out here:</span>
       <div class="w-full flex gap-4 py-2 ">
         <a href="https://www.youtube.com/watch?v=dtiLxLrzjOQ" target="_blank" class="w-full">
-          <div
-            class="hover:bg-stone-800 !px-3 !py-4 nuxt-link flex text-white w-full items-center justify-between cursor-pointer flex w-full items-center justify-between rounded border border-neutral-200 border-neutral-700 bg-neutral-800 cursor-pointer">
+          <div class="link-container nuxt-link">
             Can we calculate 100 digits of π by hand? The William Shanks method.
             <NuxtImg src="/images/arrow-right-solid.svg" alt="Empty Cart Image" class="squint-icon !w-4 text-white" />
           </div>
         </a>
         <a href="https://www.youtube.com/watch?v=LIg-6glbLkU" target="_blank" class="w-full">
-          <div
-            class="hover:bg-stone-800 !px-3 !py-4 nuxt-link flex text-white w-full items-center justify-between cursor-pointer flex w-full items-center justify-between rounded border border-neutral-200 border-neutral-700 bg-neutral-800 cursor-pointer">
+          <div class="link-container nuxt-link">
             The biggest hand calculation in a century! [Pi Day 2024]
             <NuxtImg src="/images/arrow-right-solid.svg" alt="Empty Cart Image" class="squint-icon !w-4 text-white" />
           </div>
         </a>
       </div>
-      <!-- <h5 class="font-semibold text-white">Hobbies</h5>
-      <span class="text-gray-100">
-        I've been a member of the Maths Soc committee and am an active part of the Edinburgh Maths community. I’ve
-        attended a TMiP clopen mic night and would love to join more if I have the time! In my spare time, I enjoy
-        ballroom and tap dancing, choral singing, and designing Celtic knots.
-      </span> -->
     </div>
 
 
@@ -56,62 +48,16 @@ import AboutMe from '~/pages/About-Me.vue';
 </script>
 
 <style scoped>
-/* Rainbow gradient button styles */
-.rainbow-gradient-btn {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+
+
+.icon {
+  width: 1rem; /* equivalent to !w-4 */
+  fill: currentColor;
 }
 
-.rainbow-gradient-btn::before {
-  content: '';
-  position: absolute;
-  width: 110%;
-  height: 350%;
-  background: conic-gradient(#FF2E2E,
-      #FF831E,
-      #FCFF51,
-      #58FF57,
-      #575FFF,
-      #D257FF,
-      #FF57E5,
-      #FF1556);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0deg);
-  z-index: -1;
-}
-
-.rainbow-gradient-btn:hover {
-  transform: scale(1.1);
-}
-
-.rainbow-gradient-btn:hover::before {
-  animation: spin 4s infinite linear;
-}
-
-@keyframes spin {
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-
-/* Additional button styling */
-.rainbow-gradient-btn::after {
-  content: 'Take a look';
-  position: absolute;
-  width: 96%;
-  height: 86%;
-  background-color: white;
-  border-radius: 0.4em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.25rem;
-  color: black;
-  font-weight: 500;
-  z-index: 1;
+a {
+  text-decoration: none;
+  width: 100%;
 }
 
 .nuxt-link {
