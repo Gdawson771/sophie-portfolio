@@ -18,7 +18,7 @@
         <h5 class="font-light text-sm text-gray-300 pb-3">{{ document.date }}</h5>
         <span v-html="document.summary" class="text-gray-200"/> 
       </div>
-      <div @click="handleDocumentClick(document.src)" class="link-container nuxt-link">
+      <div @click="handleDocumentClick(document.src)" @contextmenu.prevent="openInNewTab(document.src)" class="nuxt-link link-container">
         Read Full Paper
         <NuxtImg src="/images/arrow-right-solid.svg" alt="Empty Cart Image" class="squint-icon !w-4 text-white"/>
       </div>
@@ -64,6 +64,12 @@ const firstRowDocuments = ref([
 const handleDocumentClick = (src) => {
   window.location.href = `/papers/${src}`;
 };
+
+const openInNewTab = (src) => {
+  window.open(`/papers/${src}`, '_blank');
+};
+
+
 </script>
 
 <style scoped>

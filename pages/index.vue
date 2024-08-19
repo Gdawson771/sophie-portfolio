@@ -23,17 +23,17 @@
       <span class="text-gray-100"> I've been involved in two epic sessions of calculating pi by hand, working with
         Matt Parker in 2021 and 2023. Check the videos out here:</span>
       <div class="w-full flex gap-4 py-2 ">
-        <a href="https://www.youtube.com/watch?v=dtiLxLrzjOQ" target="_blank" class="w-full">
-          <div class="link-container nuxt-link">
+        <a href="https://www.youtube.com/watch?v=dtiLxLrzjOQ" target="_blank" class="w-full link-container nuxt-link">
+          <div>
             Can we calculate 100 digits of π by hand? The William Shanks method.
-            <NuxtImg src="/images/arrow-right-solid.svg" alt="Empty Cart Image" class="squint-icon !w-4 text-white" />
           </div>
+            <NuxtImg src="/images/arrow-right-solid.svg" alt="Empty Cart Image" class="squint-icon !w-4 text-white" />
         </a>
-        <a href="https://www.youtube.com/watch?v=LIg-6glbLkU" target="_blank" class="w-full">
-          <div class="link-container nuxt-link">
+        <a href="https://www.youtube.com/watch?v=LIg-6glbLkU" target="_blank" class="link-container nuxt-link w-full">
+          <div>
             The biggest hand calculation in a century! [Pi Day 2024]
-            <NuxtImg src="/images/arrow-right-solid.svg" alt="Empty Cart Image" class="squint-icon !w-4 text-white" />
           </div>
+            <NuxtImg src="/images/arrow-right-solid.svg" alt="Empty Cart Image" class="squint-icon !w-4 text-white" />
         </a>
       </div>
     </div>
@@ -60,19 +60,7 @@ a {
   width: 100%;
 }
 
-.nuxt-link {
-  .squint-icon {
-    transform: rotate(-45deg);
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-  }
-}
 
-.nuxt-link:hover {
-  .squint-icon {
-    transform: rotate(-55deg);
-  }
-}
 
 .container {
   display: grid;
