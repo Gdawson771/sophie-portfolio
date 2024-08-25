@@ -1,19 +1,11 @@
 <template>
-    <nav class="h-1/6 py-12">
+    <nav class="h-1/6">
         <div class="w-full flex justify-center">
             <div class="w-full lg:w-2/3 xl:w-[45rem] p-4">
-                <ul class="flex w-full justify-start gap-8 items-center">
+                <ul class="flex w-full justify-center gap-8 items-center">
                     <li>
                         <NuxtLink to="/" class="text-white hover:text-gray-200">Home</NuxtLink>
                     </li>
-                    <!-- <li> -->
-                        <!-- <NuxtLink to="/writing" class="text-white hover:text-gray-200">Papers</NuxtLink> -->
-                    <!-- </li> -->
-                    <!-- <li class="flex">
-                        <NuxtLink to="/">
-                            <NuxtImg src="/images/spiral-2.png" alt="Intricate Spiral Design" class="w-8 xl:w-24"/>
-                        </NuxtLink>
-                    </li> -->
                     <li>
                         <NuxtLink to="/courses" class="text-white hover:text-gray-200">Courses</NuxtLink>
                     </li>

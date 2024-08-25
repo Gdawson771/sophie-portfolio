@@ -9,40 +9,7 @@
             <span class="text-md font-light text-gray-200">Mathemagician/PhD student/cat lover</span>
 
          </div>
-         <span class="text-gray-100">
-            I graduated from the University of Edinburgh with an MMath 1st class this summer -- where an MMath is a 5
-            year
-            integrated masters in mathematics. Going forward, I will be supervised by Prof Antony Maciocia in a
-            PhD at the University of Edinburgh, looking at algebraic geometry and category theory.
-         </span>
-
-         <h5 class="font-semibold text-white">Pi Day</h5>
-         <span class="text-gray-100"> I've been involved in two epic sessions of calculating pi by hand, working with
-            Matt Parker in 2021 and 2023. Check the videos out here:</span>
-         <div class="w-full flex gap-4 py-2 ">
-            <a href="https://www.youtube.com/watch?v=dtiLxLrzjOQ" target="_blank" class="w-full">
-               <div
-                  class="!px-3 !py-4 nuxt-link flex text-white w-full items-center justify-between cursor-pointer flex w-full items-center justify-between rounded border border-neutral-200 border-neutral-700 bg-neutral-800 cursor-pointer">
-                  Can we calculate 100 digits of π by hand? The William Shanks method.
-                  <NuxtImg src="/images/arrow-right-solid.svg" alt="Empty Cart Image"
-                     class="squint-icon !w-4 text-white" />
-               </div>
-            </a>
-            <a href="https://www.youtube.com/watch?v=LIg-6glbLkU" target="_blank" class="w-full">
-               <div
-                  class="!px-3 !py-4 nuxt-link flex text-white w-full items-center justify-between cursor-pointer flex w-full items-center justify-between rounded border border-neutral-200 border-neutral-700 bg-neutral-800 cursor-pointer">
-                  The biggest hand calculation in a century! [Pi Day 2024]
-                  <NuxtImg src="/images/arrow-right-solid.svg" alt="Empty Cart Image"
-                     class="squint-icon !w-4 text-white" />
-               </div>
-            </a>
-         </div>
-         <h5 class="font-semibold text-white">Hobbies</h5>
-         <span class="text-gray-100">
-            I've been a member of the Maths Soc committee and am an active part of the Edinburgh Maths community. I’ve
-            attended a TMiP clopen mic night and would love to join more if I have the time! In my spare time, I enjoy
-            ballroom and tap dancing, choral singing, and designing Celtic knots.
-         </span>
+      
          <NuxtLink to="/writing" class="mx-auto">
             <button
                class="w-40 text-black text-lg bg-white w-full flex flex-col p-4 gap-2 rounded-xl hover:bg-gray-200 cursor-pointer">

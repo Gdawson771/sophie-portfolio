@@ -9,7 +9,7 @@
     areas of mathematics. Feel free to dive into the papers below and sate your mathematical hunger!
     </span>
   </div>
-  <div class="w-full flex-col gap-8 flex break-words w-full flex min-h-screen items-center justify-center pb-40">
+  <div class="w-full flex-col gap-8 flex break-words min-h-screen items-center justify-center pb-40">
     <div v-for="document in firstRowDocuments" class="p-4 text-white w-full lg:w-2/3 xl:w-[45rem] flex flex-col gap-4">
        <div>
         <h3 class="text-lg font-semibold">
@@ -20,7 +20,7 @@
       </div>
       <div @click="handleDocumentClick(document.src)" @contextmenu.prevent="openInNewTab(document.src)" class="nuxt-link link-container">
         Read Full Paper
-        <NuxtImg src="/images/arrow-right-solid.svg" alt="Empty Cart Image" class="squint-icon !w-4 text-white"/>
+        <NuxtImg src="/images/arrow-right-solid.svg" alt="Empty Cart Image" class="!w-4 text-white squint-icon"/>
       </div>
     </div>
   </div>

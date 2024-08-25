@@ -1,6 +1,14 @@
 <template>
-  <div class="bg-[#111010] h-full min-h-screen">
-    <Navbar />
+  <div class="bg-[#111010] h-full min-h-screen flex flex-col justify-center items-center">
+    <div class="justify-center items-center flex w-full flex-col">
+      <NuxtImg src="/images/white_knot_2.png" alt="Photo of myself at the park" class="opacity-20 w-[30rem]"/>
+      <div class="absolute">
+        <NuxtImg src="/images/portraitcloseup.jpg" alt="Closeup portrait of myself" class="mt-16 mx-auto rounded-full h-32 w-32 border-2 border-white"/>
+        <h1 class="text-white text-4xl">Hi, I'm Sophie</h1>
+        <span class="text-md font-light text-gray-200">PhD student | pi calculator</span>
+      </div>
+    </div>
+    <Navbar class="-mt-50"/>
     <NuxtPage />
   </div>
 </template>
@@ -21,5 +29,4 @@ export default {
 
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
