@@ -2,7 +2,7 @@
     <div class="bg-[#111010] flex  min-h-screen justify-center w-full">
         <div class="flex flex-col gap-2 w-full lg:w-2/3 xl:w-[45rem] p-4">
             <div class="flex flex-col pb-8">
-                <h1 class="text-white text-3xl">MMath courses at Edinburgh</h1>
+                <h1 class="text-white text-3xl">M-Math courses at Edinburgh</h1>
                 <span class="text-md font-light text-gray-200">
                     Enjoy this breakdown of the courses I took during my M-Math, alongside
                     my thoughts on them and some recommendations for Math students
@@ -58,7 +58,6 @@ const creditsQuery = ref([]);
 const filteredCourses = computed(() => {
     let filtered = {};
     for (const year in courses.value) {
-        console.log(creditsQuery.value);
         let filteredCourses = courses.value[year].filter(course =>
             (course.title.toLowerCase().includes(searchQuery.value.toLowerCase()) ||
                 course.description.toLowerCase().includes(searchQuery.value.toLowerCase())) &&

@@ -40,9 +40,6 @@ onMounted(() => {
     isMobile.value = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
   }
 });
-
-
-console.log(pdfSrc);
 </script>
 
 <style scoped>
