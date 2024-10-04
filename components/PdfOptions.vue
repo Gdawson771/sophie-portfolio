@@ -34,7 +34,7 @@ const firstRowDocuments = ref([
     title: "Positivity and Integrality of Mirror Maps",
     date: "May 2024",
     src: "The_positivity_and_integrality_of_mirror_maps",
-    summary: "This paper explores the application of mirror maps to reflexive polytopes in Algebraic Geometry. In my dissertation I found that these mirror map power series have all integer coefficients, and that a variant map produces series with all positive integers."
+    summary: 'This paper explores the application of mirror maps to reflexive polytopes in Algebraic Geometry. In my dissertation I found that these mirror map power series have all integer coefficients, and that a variant map produces series with all positive integers. The preprint is available <a class="text-blue-500" target="_blank" href="https://arxiv.org/abs/2409.07601">here</a>'
 },
   { 
     title: 'Discrete Morse theory',
@@ -55,7 +55,7 @@ const firstRowDocuments = ref([
   },
   { 
     title: 'Covering spaces of the figure of eight',
-    src: 'Covering_Spaces_Of_The_Figure_Of_Eight',
+    src: 'Covering_spaces_of_the_figure_of_eight',
     date: 'Summer 2021',
     summary: 'During the summer of 2021, I explored Algebraic Topology, focusing on the covering spaces of the figure-eight in an unpaid project under Prof. Jon Pridham. I incorporated my interest in Celtic knots into the research and shared my findings in Chalkdust magazine, available <a class="text-blue-500" href="https://chalkdustmagazine.com/features/covering-infinity/">here</a>.',
   }

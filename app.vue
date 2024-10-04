@@ -1,14 +1,15 @@
 <template>
   <div class="bg-[#111010] h-full min-h-screen flex flex-col justify-center items-center">
     <div class="justify-center items-center flex w-full flex-col">
-      <NuxtImg src="/images/white_knot_2.png" alt="Photo of myself at the park" class="opacity-20 w-[30rem]"/>
+      <NuxtImg src="/images/white_knot_2.png" alt="One of the knots I have drawn" layout="responsive" class="opacity-20 w-[30rem]" width="480" height="480" />
       <div class="absolute">
-        <NuxtImg src="/images/portraitcloseup.jpg" alt="Closeup portrait of myself" class="mt-16 mx-auto rounded-full h-32 w-32 border-2 border-white"/>
+        <NuxtImg src="/images/portraitcloseup.jpg" alt="Closeup portrait of myself"
+          class="mt-16 mx-auto rounded-full h-32 w-32 border-2 border-white" width="128" height="128"  layout="responsive"/>
         <h1 class="text-white text-4xl">Hi, I'm Sophie</h1>
         <span class="text-md font-light text-gray-200">PhD student | pi calculator</span>
       </div>
     </div>
-    <Navbar class="-mt-50"/>
+    <Navbar class="-mt-50" />
     <NuxtPage />
   </div>
 </template>
