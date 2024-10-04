@@ -34,7 +34,7 @@ const firstRowDocuments = ref([
     title: "Positivity and Integrality of Mirror Maps",
     date: "May 2024",
     src: "The_positivity_and_integrality_of_mirror_maps",
-    summary: 'This paper explores the application of mirror maps to reflexive polytopes in Algebraic Geometry. In my dissertation I found that these mirror map power series have all integer coefficients, and that a variant map produces series with all positive integers. The preprint is available <a class="text-blue-500" target="_blank" href="https://arxiv.org/abs/2409.07601">here</a>'
+    summary: 'This paper explores the application of mirror maps to reflexive polytopes in Algebraic Geometry. In my dissertation I found that these mirror map power series have all integer coefficients, and that a variant map produces series with all positive integers. The preprint is available <a class="text-blue-500" target="_blank" href="https://arxiv.org/abs/2409.07601">here</a>.'
 },
   { 
     title: 'Discrete Morse theory',
