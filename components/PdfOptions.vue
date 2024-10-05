@@ -55,7 +55,7 @@ const firstRowDocuments = ref([
   },
   { 
     title: 'Covering spaces of the figure of eight',
-    src: 'Covering_spaces_of_the_figure_of_eight',
+    src: 'Covering_Spaces_Of_The_Figure_Of_Eight',
     date: 'Summer 2021',
     summary: 'During the summer of 2021, I explored Algebraic Topology, focusing on the covering spaces of the figure-eight in an unpaid project under Prof. Jon Pridham. I incorporated my interest in Celtic knots into the research and shared my findings in Chalkdust magazine, available <a class="text-blue-500" href="https://chalkdustmagazine.com/features/covering-infinity/">here</a>.',
   }
