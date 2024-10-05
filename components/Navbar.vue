@@ -12,7 +12,7 @@
                     <li>
                         <NuxtLink to="/tutoring" class="text-white hover:text-gray-200">Tutoring</NuxtLink>
                     </li>
-                </ul>
+                </ul> 
             </div>
         </div>
     </nav>
