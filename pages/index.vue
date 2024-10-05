@@ -3,7 +3,7 @@
     <div class="flex flex-col items-start gap-2 p-4 lg:w-2/3 xl:w-[45rem] ">
 
       <span class="text-gray-100">
-        Graduated summer 2024 with a 1st class M-Math from the University of Edinburgh.
+        Graduated summer 2024 with a 1st class MMath from the University of Edinburgh.
         Now pursuing a PhD at the University of Edinburgh under Prof. Antony Maciocia,
         focusing on algebraic geometry and category theory.
       </span>
